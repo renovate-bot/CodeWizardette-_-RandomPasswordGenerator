@@ -17,10 +17,10 @@ def generate_passwords(length):
                 if count % 10000 == 0:
                     print(f"{count} pass saved.")
 
-    print("Tüm şifreler başarıyla kaydedildi.")
+    print("All pass saved.")
 
 #password length 
-length = int(input("Şifre uzunluğunu girin: "))
+length = int(input("input pass length: "))
 
 # pass export .txt save
 generate_passwords(length)
