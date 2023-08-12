@@ -1,4 +1,4 @@
-<h1>🌈 Welcome to My Code Repository! 🌟<h1/>
+🌈 Welcome to My Code Repository! 🌟
 
 
 This repo contains a simple Python script that allows you to generate random passwords. You can easily have fun generating and saving passwords! 😄
