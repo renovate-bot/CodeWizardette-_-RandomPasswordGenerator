@@ -3,14 +3,14 @@ import string
 
 def generate_passwords(length):
     characters = string.ascii_letters + string.digits + string.punctuation
-    passwords = []
+    passwords = set()
 
     with open("passwords.txt", "w") as file:
         count = 0
         while count < 100000:
             password = ''.join(random.choice(characters) for i in range(length))
             if password not in passwords:
-                passwords.append(password)
+                passwords.add(password)
                 file.write(password + "\n")
 
                 count += 1
@@ -19,8 +19,6 @@ def generate_passwords(length):
 
     print("All pass saved.")
 
-#password length 
 length = int(input("input pass length: "))
 
-# pass export .txt save
 generate_passwords(length)
